@@ -1,0 +1,16 @@
+<%- include('./partial/header.ejs') %>
+
+<main>
+    <div class="content">
+        <% for( let i = 0; i < blogs.length; i++ ) { %>
+            <a href="/blogs/<%=blogs[i].id %>">
+                <div class="card">
+                    <h2><%=blogs[i].title  %></h2>
+                    <p><%=blogs[i].sub%></p>
+                    
+                </div>
+            </a>
+        <% } %>
+    </div>
+</main>
+<%- include('./partial/footer.ejs') %>

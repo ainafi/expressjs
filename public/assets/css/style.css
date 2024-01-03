@@ -1,0 +1,26 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li {
+    list-style: none;
+}
+ul{
+    display: flex;
+}
+li{
+    margin: 20px;
+}
+.card{
+    width: 200px;
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 1rem;
+}
+.content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}

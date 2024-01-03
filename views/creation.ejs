@@ -1,0 +1,17 @@
+<%- include('./partial/header.ejs') %>
+    <h1>creation de blog</h1>
+    
+        <div class="contentz">
+            <form action="/postBlog" method="POST">
+                <label for="">title</label> <br/>
+                <input name="title" type="text"> <br>
+                <label for="">subtitle</label> <br/>
+                <input name="sub" type="text"> <br>
+                <label for="">content</label> <br/>
+                <input name="description" type="text"> <br>
+
+                <button type="submit">submit</button>
+            </form>
+        </div>
+    
+<%- include('./partial/footer.ejs') %>

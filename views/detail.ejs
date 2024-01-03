@@ -1,0 +1,16 @@
+<%- include('./partial/header.ejs') %>
+<h1>detail de blog</h1>
+<h2><%=blogs.title  %></h2>
+<p><%=blogs.sub%></p>
+<a type="button" style="color: red; cursor: pointer;" class="btelete" data-doc="<%= blogs._id %>">delete</a>
+<script>
+    const btnDelete = document.querySelector('.btelete');
+    btnDelete.addEventListener('click', (e) => {
+        const endpoint = `blogs/${btnDelete.dataset.doc}`;
+        fetch(endpoint, {
+            method: "DELETE"
+        })
+        .then(data =>window.location.href='/')
+        });
+</script>
+<%- include('./partial/footer.ejs') %>
